@@ -232,6 +232,6 @@ class __TwigTemplate_c6dcb70b5b104738ff4dc3b24d075f63107966b6b54e82ae8724aaf9206
 
     public function getSourceContext()
     {
-        return new Source("", "header.twig", "C:\\xampp\\phpMyAdmin\\templates\\header.twig");
+        return new Source("", "header.twig", "C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\phpMyAdmin\\templates\\header.twig");
     }
 }
