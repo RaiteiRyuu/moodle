@@ -4937,6 +4937,7 @@ $cache = array (
       array (
         'boost' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/boost/settings.php',
         'classic' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/classic/settings.php',
+        'kitt' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/kitt/settings.php',
       ),
       'local' => 
       array (
