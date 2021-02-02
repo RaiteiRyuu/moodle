@@ -12,14 +12,37 @@ if ($ADMIN->fulltree) {
     // Boost provides a nice setting page which splits settings onto separate tabs. We want to use it here.                         
     $settings = new theme_boost_admin_settingspage_tabs('themesettingkitt', get_string('configtitle', 'theme_kitt'));             
  
-    // Each page is a tab - the first is the "General" tab.                                                                         
+        /*
+    * ----------------------
+    * General settings tab
+    * Each page is a tab      
+    * ----------------------
+    */
     $page = new admin_settingpage('theme_kitt_general', get_string('generalsettings', 'theme_kitt'));                             
  
+    // Logo file setting.
+    $name = 'theme_kitt/logo';
+    $title = get_string('logo', 'theme_kitt');
+    $description = get_string('logodesc', 'theme_kitt');
+    $opts = array('accepted_types' => array('.png', '.jpg', '.gif', '.webp', '.tiff', '.svg'), 'maxfiles' => 1);
+    $setting = new admin_setting_configstoredfile($name, $title, $description, 'logo', 0, $opts);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    // Favicon setting.
+    $name = 'theme_kitt/favicon';
+    $title = get_string('favicon', 'theme_kitt');
+    $description = get_string('favicondesc', 'theme_kitt');
+    $opts = array('accepted_types' => array('.ico'), 'maxfiles' => 1);
+    $setting = new admin_setting_configstoredfile($name, $title, $description, 'favicon', 0, $opts);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
     // Replicate the preset setting from boost.                                                                                     
     $name = 'theme_kitt/preset';                                                                                                   
     $title = get_string('preset', 'theme_kitt');                                                                                   
     $description = get_string('preset_desc', 'theme_kitt');                                                                        
-    $default = 'default.scss';                                                                                                      
+    $default = 'default.scss';  
  
     // We list files in our own file area to add to the drop down. We will provide our own function to                              
     // load all the presets from the correct paths.                                                                                 
@@ -46,7 +69,16 @@ if ($ADMIN->fulltree) {
  
     $setting = new admin_setting_configstoredfile($name, $title, $description, 'preset', 0,                                         
         array('maxfiles' => 20, 'accepted_types' => array('.scss')));                                                               
-    $page->add($setting);     
+    $page->add($setting);  
+    
+    // Login page background image.
+    $name = 'theme_kitt/loginbgimg';
+    $title = get_string('loginbgimg', 'theme_kitt');
+    $description = get_string('loginbgimg_desc', 'theme_kitt');
+    $opts = array('accepted_types' => array('.png', '.jpg', '.svg'));
+    $setting = new admin_setting_configstoredfile($name, $title, $description, 'loginbgimg', 0, $opts);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
  
     // Variable $brand-color.                                                                                                       
     // We use an empty default value because the default colour should come from the preset.                                        

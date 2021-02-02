@@ -555,10 +555,13 @@ $cache = array (
     ),
     'theme' => 
     array (
+      'academi' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/academi',
       'adaptable' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/adaptable',
       'boost' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/boost',
       'classic' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/classic',
+      'eguru' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/eguru',
       'kitt' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/kitt',
+      'klass' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/klass',
       'moove' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/moove',
     ),
     'local' => 
@@ -3818,6 +3821,7 @@ $cache = array (
     'search_solr_document' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/search/engine/solr/classes/document.php',
     'search_solr_engine' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/search/engine/solr/classes/engine.php',
     'search_solr_schema' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/search/engine/solr/classes/schema.php',
+    'theme_academi\\privacy\\provider' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/academi/classes/privacy/provider.php',
     'theme_adaptable\\activity' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/adaptable/classes/activity.php',
     'theme_adaptable\\activity_meta' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/adaptable/classes/activity_meta.php',
     'theme_adaptable\\admin_settingspage_tabs' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/adaptable/classes/admin_settingspage_tabs.php',
@@ -3853,6 +3857,8 @@ $cache = array (
     'theme_classic\\output\\core_renderer' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/classic/classes/output/core_renderer.php',
     'theme_classic\\output\\icon_system_fontawesome' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/classic/classes/output/icon_system_fontawesome.php',
     'theme_classic\\privacy\\provider' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/classic/classes/privacy/provider.php',
+    'theme_eguru\\privacy\\provider' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/eguru/classes/privacy/provider.php',
+    'theme_klass\\privacy\\provider' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/klass/classes/privacy/provider.php',
     'theme_moove\\api\\accessibility' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/moove/classes/api/accessibility.php',
     'theme_moove\\format_topics_renderer' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/moove/classes/format_topics_renderer.php',
     'theme_moove\\output\\certificates' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/moove/classes/output/certificates.php',
@@ -4620,10 +4626,13 @@ $cache = array (
       ),
       'theme' => 
       array (
+        'academi' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/academi/lib.php',
         'adaptable' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/adaptable/lib.php',
         'boost' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/boost/lib.php',
         'classic' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/classic/lib.php',
+        'eguru' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/eguru/lib.php',
         'kitt' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/kitt/lib.php',
+        'klass' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/klass/lib.php',
         'moove' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/moove/lib.php',
       ),
       'local' => 
@@ -4980,10 +4989,13 @@ $cache = array (
       ),
       'theme' => 
       array (
+        'academi' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/academi/settings.php',
         'adaptable' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/adaptable/settings.php',
         'boost' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/boost/settings.php',
         'classic' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/classic/settings.php',
+        'eguru' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/eguru/settings.php',
         'kitt' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/kitt/settings.php',
+        'klass' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/klass/settings.php',
         'moove' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/moove/settings.php',
       ),
       'local' => 

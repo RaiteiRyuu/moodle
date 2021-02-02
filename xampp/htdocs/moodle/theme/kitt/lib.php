@@ -29,11 +29,50 @@ function theme_kitt_get_main_scss_content($theme) {
         // Safety fallback - maybe new installs etc.                                                                                
         $scss .= file_get_contents($CFG->dirroot . '/theme/boost/scss/preset/default.scss');                                        
     }                                                                                                                                       
-  // Pre CSS - this is loaded AFTER any prescss from the setting but before the main scss.                                        
+    // Pre CSS - this is loaded AFTER any prescss from the setting but before the main scss.                                        
     $pre = file_get_contents($CFG->dirroot . '/theme/kitt/scss/pre.scss');                                                         
     // Post CSS - this is loaded AFTER the main scss but before the extra scss from the setting.                                    
     $post = file_get_contents($CFG->dirroot . '/theme/kitt/scss/post.scss');                                                       
  
     // Combine them together.                                                                                                       
-    return $pre . "\n" . $scss . "\n" . $post;                                     
+    return $pre . "\n" . $scss . "\n" . $post;    
+}
+
+    
+function theme_moove_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options = array()) {
+    $theme = theme_config::load('kitt');
+
+    if ($context->contextlevel == CONTEXT_SYSTEM and $filearea === 'logo') {
+        return $theme->setting_file_serve('logo', $args, $forcedownload, $options);
+    }
+
+    if ($context->contextlevel == CONTEXT_SYSTEM and $filearea === 'headerimg') {
+        return $theme->setting_file_serve('headerimg', $args, $forcedownload, $options);
+    }
+
+    if ($context->contextlevel == CONTEXT_SYSTEM and $filearea === 'loginbgimg') {
+        return $theme->setting_file_serve('loginbgimg', $args, $forcedownload, $options);
+    }
+
+    if ($context->contextlevel == CONTEXT_SYSTEM and $filearea === 'favicon') {
+        return $theme->setting_file_serve('favicon', $args, $forcedownload, $options);
+    }
+/*
+    if ($context->contextlevel == CONTEXT_SYSTEM and $filearea === 'topfooterimg') {
+        return $theme->setting_file_serve('topfooterimg', $args, $forcedownload, $options);
+    }
+
+    if ($context->contextlevel == CONTEXT_SYSTEM and preg_match("/^sliderimage[1-9][0-9]?$/", $filearea) !== false) {
+        return $theme->setting_file_serve($filearea, $args, $forcedownload, $options);
+    }
+
+    if ($context->contextlevel == CONTEXT_SYSTEM and preg_match("/^sponsorsimage[1-9][0-9]?$/", $filearea) !== false) {
+        return $theme->setting_file_serve($filearea, $args, $forcedownload, $options);
+    }
+
+    if ($context->contextlevel == CONTEXT_SYSTEM and preg_match("/^clientsimage[1-9][0-9]?$/", $filearea) !== false) {
+        return $theme->setting_file_serve($filearea, $args, $forcedownload, $options);
+    }
+*/
+    send_file_not_found();
 }
