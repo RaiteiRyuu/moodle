@@ -1,0 +1,7 @@
+// where you put the variables for the theme and scss that wants to be overwritten from the default.scss in boost.
+// in bosst the primary color on the text is blue and you can change the color here of the default.scss
+// for example $primary: indigo;
+
+$primary: indigo;
+$font-family-sans-serif: "Poppins", sans-serif, !default;
+

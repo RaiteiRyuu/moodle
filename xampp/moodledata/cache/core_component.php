@@ -5006,6 +5006,7 @@ $cache = array (
         'classic' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/classic/settings.php',
         'eguru' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/eguru/settings.php',
         'fordson' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/fordson/settings.php',
+        'kitt2' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/kitt2/settings.php',
         'moove' => 'C:\\Users\\evil_\\source\\repos\\moodle\\xampp\\htdocs\\moodle/theme/moove/settings.php',
       ),
       'local' => 
