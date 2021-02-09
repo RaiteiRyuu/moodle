@@ -304,9 +304,10 @@ ul.footercontact {
 #page-footer {
     position: relative;
     background-color: $footer-bg;
+    color: $footer-text-color;
 }
 
-#page-footer .socials_wrapper .socials a{
+.socials_wrapper .socials a{
     text-decoration: none !important;
     color: $primary;
 }
