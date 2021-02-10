@@ -60,7 +60,7 @@
 
 
 // AALinks
-.aalink.focus, #page-footer a:not([class]).focus, .arrow_link.focus, a:not([class]).focus, .activityinstance>a.focus, .aalink:focus, #page-footer a:not([class]):focus, .arrow_link:focus, a:not([class]):focus, .activityinstance>a:focus, :focus {
+.aalink.focus, #page-footer a:not([class]).focus, .arrow_link.focus, a:not([class]).focus, .activityinstance > a.focus, .aalink:focus, #page-footer a:not([class]):focus, .arrow_link:focus, a:not([class]):focus, .activityinstance > a:focus, :focus {
     outline: .2rem solid transparent;
     background-color: transparent;
     -webkit-box-shadow: none;
@@ -955,6 +955,7 @@ ul.teacherscourseview {
 
 .socials_wrapper {
     margin: 0 auto;
+
     .socials {
         margin-bottom: 0;
     }
@@ -987,6 +988,7 @@ ul.teacherscourseview {
 }
 li.nav-item {
     display: inline-flex;
+    color: $navbar-fhs-color;
 }
 // FHS Navbar
 .navbar-fhs {
@@ -1340,4 +1342,57 @@ body.editing ul.collapsibletopics .fordsoncourseformat .content .summarytext {
 .fordsoncourseformat ul.section {
     margin: 0;
     padding: 1rem;
+}
+
+#page-footer .fa-square {
+    color: #7E0087;
+}
+
+.list-group-item-action:hover, .list-group-item-action:focus {
+    background-color: $molk-purple;
+    color: white;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: $molk-purple;
+}
+
+.dropdown-item:focus-within{
+    background-color: $molk-purple;
+}
+
+.usertext:hover {
+    color: #fff;
+    background-color: #7E0087;
+}
+
+.usermenu:hover {
+    background-color: $molk-purple;
+    border: 1px solid $molk-purple;
+    border-radius: 2px;
+}
+
+.usermenu {
+  .login{
+    a{
+      color: white;
+    }
+    a:hover{
+        font-size:20px;
+    }
+  }
+}
+
+.marketcontent .text_to_html {
+    color: black;
+}
+
+.list-unstyled .listitem:hover {
+    background-color: $gray-300;
+}
+.card .card-body .course-list .listitem:hover {
+    background-color: $gray-300;
+    color: $molk-purple;
 }
